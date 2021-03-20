@@ -27,7 +27,7 @@ $add ='max_results=100&tweet.fields=created_at&expansions=author_id'
 $url = "$($twapi)?query=$($query)&$($range)&$($add)"
 ```
 
-* $twapi is the Twitter API for Full Archive Search.
+* $twapi is the Twitter API Base URL for Full Archive Search.
 * $query is the search criteria.
   * my search is targetting blockchain tweets in English 
     * https://developer.twitter.com/en/docs/twitter-api/tweets/search/api-reference/get-tweets-search-all
@@ -39,3 +39,4 @@ $url = "$($twapi)?query=$($query)&$($range)&$($add)"
     * https://developer.twitter.com/en/docs/twitter-api/fields 
   * expansion is meta data (the author of tweet)
     * https://developer.twitter.com/en/docs/twitter-api/expansions 
+
