@@ -40,3 +40,19 @@ $url = "$($twapi)?query=$($query)&$($range)&$($add)"
   * expansion is meta data (the author of tweet)
     * https://developer.twitter.com/en/docs/twitter-api/expansions 
 
+## Output
+```jsonc
+[
+  {
+    "Item1": "00000000001",//author_id
+    "Item2": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma",
+    "Item3": "2020-12-30T23:59:46Z",
+    "Length": 3
+  },
+  {
+    "Item1": "0000000011",
+    "Item2": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma",
+    "Item3": "2020-12-30T23:59:41Z",
+    "Length": 3
+  },
+```
