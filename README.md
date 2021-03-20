@@ -54,5 +54,6 @@ $url = "$($twapi)?query=$($query)&$($range)&$($add)"
     "Item2": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma",
     "Item3": "2020-12-30T23:59:41Z",
     "Length": 3
-  },
+  }
+]
 ```
