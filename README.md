@@ -33,6 +33,7 @@ $url = "$($twapi)?query=$($query)&$($range)&$($add)"
     * https://developer.twitter.com/en/docs/twitter-api/tweets/search/api-reference/get-tweets-search-all
 * start_time and end_time are the range tweets you are searching.
   * date and time must be formatted like YYYY-MM-DDTHH:mm:ssZ. (mm is minutes and MM is month)
+  * Z is Universal Time Coordinated (UTC) or London time 
 * add is additional parameters described in Documentation
   * max_result can range from 10 to 500
   * tweet.fields is the desired fields from tweet like created_at (meaning date tweet was created)
@@ -44,7 +45,7 @@ $url = "$($twapi)?query=$($query)&$($range)&$($add)"
 ```jsonc
 [
   {
-    "Item1": "00000000001",//author_id
+    "Item1": "00000000001",//not in actual author_id
     "Item2": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma",
     "Item3": "2020-12-30T23:59:46Z",
     "Length": 3
