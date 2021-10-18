@@ -20,7 +20,7 @@ while ($i -ne 1000)
     $inputData.data | ForEach-Object{ $tweetlist.Add([System.Tuple]::Create($_.author_id,$_.text,$_.created_at)) }
     $next_token = $inputData.meta.next_token
 
-    $token = "&next_token=$($next_token)"
+    $token = "&pagination_token=$($next_token)"
     if ($i -ge 1)
     {
         $url = $url.Replace($beforeToken,"")
