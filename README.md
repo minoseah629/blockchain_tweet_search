@@ -58,3 +58,4 @@ $url = "$($twapi)?query=$($query)&$($range)&$($add)"
   }
 ]
 ```
+https://developer.twitter.com/en/docs/twitter-api/tweets/search/integrate/build-a-query
